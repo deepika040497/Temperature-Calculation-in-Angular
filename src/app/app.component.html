@@ -1,0 +1,25 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  
+  <form >
+    <label>
+        Farenheit:&nbsp;
+    </label>
+    <input type="number" name="fahrenheit"   id="fahrenheit" [(ngModel)]="fahrenheit" value="{{(celsius*9/5)+32}}"/><sup> o</sup>F
+   
+    <br>
+
+    <br>
+    <label>
+      Celsius:&nbsp;&nbsp;&nbsp;
+  </label>
+  
+  <input type="number" name="celsius"    id="celsius" [(ngModel)]="celsius" value="{{(fahrenheit-32)*5/9}}"/> <sup> o</sup>C
+  <br>
+
+   
+    </form>
+<router-outlet></router-outlet>
